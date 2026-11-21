@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --ulis-navy: #003B71;
+    --ulis-blue: #1D4ED8;
+    --ulis-accent: #0284C7;
+    --ulis-bg: #F8FAFC;
+  }
+}
+
+/* Administrative documents must strictly use standard hex/rgb colors to avoid oklch canvas parse errors */
+.vn-admin-document {
+  color: #000000 !important;
+  background-color: #ffffff !important;
+  border-color: #000000 !important;
+}
+
+.vn-admin-document table,
+.vn-admin-document th,
+.vn-admin-document td {
+  border-color: #000000 !important;
+  color: #000000 !important;
+}
+
+.vn-admin-document .bg-slate-50 {
+  background-color: #f8fafc !important;
+}
+
+.vn-admin-document .bg-slate-100 {
+  background-color: #f1f5f9 !important;
+}
+
+.vn-admin-document .text-slate-800,
+.vn-admin-document .text-slate-700 {
+  color: #334155 !important;
+}
+
+.vn-admin-document .text-slate-600,
+.vn-admin-document .text-slate-500 {
+  color: #475569 !important;
+}
+
+.vn-admin-document .text-slate-400 {
+  color: #94a3b8 !important;
+}
+
+.vn-admin-document .border-slate-200,
+.vn-admin-document .border-slate-300 {
+  border-color: #cbd5e1 !important;
+}
+
+.vn-admin-document .text-black {
+  color: #000000 !important;
+}
+
+.vn-admin-document .border-black {
+  border-color: #000000 !important;
+}
+
+.vn-admin-document .bg-white {
+  background-color: #ffffff !important;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+@media print {
+  body {
+    background-color: white !important;
+    color: black !important;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-page {
+    box-shadow: none !important;
+    border: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "name": "Remix ULIS Class Monitor Hub",
+  "description": "Hệ Thống Quản Trị Toàn Diện Dành Cho Lớp Trưởng ULIS - Trường Đại học Ngoại ngữ, ĐHQGHN",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
